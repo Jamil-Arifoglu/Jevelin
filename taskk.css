@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    
+    overflow-x:hidden;
     background-image: url(https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Ellipse-974-copy-22-2.jpg?id=599);
 }
 .font{
@@ -14,12 +14,22 @@ body{
    
 }
 header{
+  
+    position: relative;
     padding: 50px;
+    
 }
 .header-image-text{
-  
+    height: 80%;
+   background-color: #252525;
+    width: 100%;
+    position: absolute;
     display: flex;
-   justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
 .header-image-text .menu ul  {
@@ -45,6 +55,52 @@ header{
 }
 
 .header-image-text .Buy button{
+    background-color:#7d1eff;
+    color:white ;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+ 
+}
+
+.header-image-text-2{
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+  position: fixed;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   z-index: 4;
+   background-color: aliceblue;
+}
+
+.header-image-text-2 .menu ul  {
+    list-style: none;
+    display: flex;
+    
+    
+    
+}
+.header-image-text-2 .menu ul li a {
+    text-decoration: none;
+    color: black;
+ 
+  
+
+
+ 
+}
+.header-image-text-2 .menu li{
+    margin-left: 20px;
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.header-image-text-2 .Buy button{
     background-color:#7d1eff;
     color:white ;
     padding: 5px 20px;
@@ -329,6 +385,7 @@ border: 12px black;
 background-color: white;
 text-align: center;
 border-radius: 7px;
+z-index: 1;
 
 }
 .iconns-2{
